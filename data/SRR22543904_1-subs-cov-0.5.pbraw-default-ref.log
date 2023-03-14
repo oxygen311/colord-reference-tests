@@ -19,9 +19,9 @@ input is not gzipped
 	min fraction of m-mers in encode to always encode: 0.9
 	min part length to consider alternative reference read: 64
 	compression priority: memory
-	quality compression mode: org
+	quality compression mode: none
 	quality thresholds: 
-	quality values: 
+	quality values:  0
 	reference reads mode: sparse
 	sparse mode exponent: 1
 	sparse mode range: 1
@@ -30,13 +30,13 @@ input is not gzipped
 	reference genome path: data/GCF_027944955.1_ASM2794495v1_genomic.fna
 	store reference genome in compressed file: false
 Reading reference genome...Done.
-Time: 0.0312642
+Time: 0.0300975
 Calculating checksum...Done.
-Time: 0.00181399
+Time: 0.00175018
 total sequences in reference genome file: 7
 md5: a6a445ad40a2dac11ccc94b770234bbc
-Store reference sequences as reads in file data/.CoLoRd-68340-x4xCDjG/refGen.fq...Done.
-Time: 0.0151826
+Store reference sequences as reads in file data/.CoLoRd-174842-NzqCW4P/refGen.fq...Done.
+Time: 0.013148
 Counting k-mers.
 Stage 1: 0%Stage 1: 36%Stage 1: 100%
 Stage 2: 0%Stage 2: 3%Stage 2: 7%Stage 2: 10%Stage 2: 14%Stage 2: 17%Stage 2: 20%Stage 2: 22%Stage 2: 25%Stage 2: 28%Stage 2: 30%Stage 2: 33%Stage 2: 35%Stage 2: 37%Stage 2: 39%Stage 2: 42%Stage 2: 44%Stage 2: 46%Stage 2: 48%Stage 2: 50%Stage 2: 51%Stage 2: 53%Stage 2: 55%Stage 2: 57%Stage 2: 58%Stage 2: 60%Stage 2: 61%Stage 2: 63%Stage 2: 64%Stage 2: 65%Stage 2: 67%Stage 2: 68%Stage 2: 69%Stage 2: 70%Stage 2: 71%Stage 2: 72%Stage 2: 74%Stage 2: 75%Stage 2: 76%Stage 2: 77%Stage 2: 78%Stage 2: 79%Stage 2: 80%Stage 2: 81%Stage 2: 82%Stage 2: 83%Stage 2: 84%Stage 2: 85%Stage 2: 86%Stage 2: 87%Stage 2: 88%Stage 2: 89%Stage 2: 90%Stage 2: 91%Stage 2: 92%Stage 2: 93%Stage 2: 94%Stage 2: 95%Stage 2: 96%Stage 2: 97%Stage 2: 98%Stage 2: 99%Stage 2: 100%
@@ -46,54 +46,54 @@ approx. avg. read len: 149
 Filtering k-mers.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
 Total count filtered: 50080
-Time: 0.00374171s
+Time: 0.00366297s
 # ref genome pseudo reads: 1871
 reads queue approx. size: 73728KiB
 quals queue approx. size: 532480KiB
 headers queue approx. size: 73728KiB
-compress queue approx. size: 98307KiB
-es queue approx. size: 112640KiB
-es queue for qual approx. size: 112640KiB
-queues approx size: 980MiB
+compress queue approx. size: 102403KiB
+es queue approx. size: 128000KiB
+es queue for qual approx. size: 128000KiB
+queues approx size: 1014MiB
 filtered kmers size: 0MiB
 ref reads expected size: 0MiB
 kmers to reads expected size: 0MiB
-approx total memory: 980MiB
+approx total memory: 1014MiB
 adjusted memory related settings:
 	fill_factor_kmers_to_reads: 0.8
 	sparseMode_range: 606
 	sparseMode_exponent: 1
 sparse mode range in reads: 606
-Running compression.
-Preparing pseudoreads...Done.
-Time: 0.0127324
+Preparing pseudoreads...Running compression.
+Done.
+Time: 0.0105819
 overlap size: 190
 pseudoread len: 2980
 Kmers to reads memory usage: 0MiB
 100%
 Threads times summary:
-	reader: 0.046909
-	similarity finder: 0.027729
-	similarity finder internal (sorted): 0.010285 0.010295 0.010353 0.011188 0.011958 0.012132 0.013754 0.01474
-	mean similarity finder internal: 0.0118381
-	encoders (sorted): 7e-06 8e-06 1e-05 1.2e-05 1.5e-05 1.7e-05 0.456627
-	mean encoders: 0.0652423
-	encoders wait on queue (sorted): 0.0657957 0.0658013 0.0658127 0.0658469 0.0658617 0.0658686 0.0658745
-	mean encoders wait on queue: 0.0658373
-	entr. compr.: 0.086488
-	entr. compr. qual.: 0.09212
-	entr. compr. header: 0.078633
-	store result: 3e-06
+	reader: 0.055728
+	similarity finder: 0.02406
+	similarity finder internal (sorted): 0.008873 0.009563 0.010091 0.010311 0.011694 0.012258 0.013453 0.013635 0.013728
+	mean similarity finder internal: 0.0115118
+	encoders (sorted): 8e-06 1e-05 1.1e-05 1.2e-05 1.4e-05 1.5e-05 2.3e-05 0.447591
+	mean encoders: 0.0559605
+	encoders wait on queue (sorted): 0.0797676 0.079779 0.0797872 0.0799603 0.0800594 0.0801448 0.0801733 0.0801796
+	mean encoders wait on queue: 0.0799814
+	entr. compr.: 0.059736
+	entr. compr. qual.: 0.007236
+	entr. compr. header: 0.079899
+	store result: 9.3e-05
 Input stream sizes (before compression):
 	DNA size     : 2623196
 	Header size  : 684500
 DNA size        : 494912
-Quality size    : 89176
+Quality size    : 22
 Header size     : 52394
-Meta size       : 81
-Info size       : 281
+Meta size       : 85
+Info size       : 269
 reference reads memory usage: 1MiB
-Total time      : 1.04299s
+Total time      : 1.04459s
  * * * * * * * * READS STATS * * * * * * * * 
 # reads                        : 17488
 min read len                   : 149

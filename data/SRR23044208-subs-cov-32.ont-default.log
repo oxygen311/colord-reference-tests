@@ -19,8 +19,8 @@ input is not gzipped
 	min fraction of m-mers in encode to always encode: 0.9
 	min part length to consider alternative reference read: 64
 	compression priority: memory
-	quality compression mode: org
-	quality thresholds: 
+	quality compression mode: 4-avg
+	quality thresholds:  7 14 26
 	quality values: 
 	reference reads mode: sparse
 	sparse mode exponent: 1
@@ -36,7 +36,7 @@ approx. avg. read len: 8123
 Filtering k-mers.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
 Total count filtered: 8304901
-Time: 0.0540707s
+Time: 0.0471772s
 reads queue approx. size: 73728KiB
 quals queue approx. size: 532480KiB
 headers queue approx. size: 73728KiB
@@ -57,28 +57,28 @@ Running compression.
 2%4%7%10%12%15%18%20%23%26%28%30%33%35%38%40%Kmers to reads memory usage: 10MiB
 43%46%48%51%53%56%58%60%63%65%67%70%72%75%77%80%82%85%87%90%92%95%97%100%
 Threads times summary:
-	reader: 1.84384
-	similarity finder: 1.07462
-	similarity finder internal (sorted): 0.172098 0.191234 0.2354 0.275826 0.442499 0.457652 0.806856 1.1592
-	mean similarity finder internal: 0.467595
-	encoders (sorted): 14.8525 15.2051 17.0197 17.3565 17.624 17.7768 17.9658
-	mean encoders: 16.8286
-	encoders wait on queue (sorted): 0.0960744 0.159065 0.209727 0.26198 0.317562 0.37777 0.455316
-	mean encoders wait on queue: 0.268213
-	entr. compr.: 4.82988
-	entr. compr. qual.: 12.6822
-	entr. compr. header: 0.098261
-	store result: 3e-06
+	reader: 1.8421
+	similarity finder: 1.06299
+	similarity finder internal (sorted): 0.129166 0.14269 0.150283 0.292497 0.500306 0.505274 0.931292 1.08074
+	mean similarity finder internal: 0.466531
+	encoders (sorted): 15.059 15.1919 16.7262 17.3445 17.4255 17.639 17.9152
+	mean encoders: 16.7573
+	encoders wait on queue (sorted): 0.0797525 0.120803 0.159579 0.222247 0.279356 0.348321 0.428026
+	mean encoders wait on queue: 0.234012
+	entr. compr.: 4.92989
+	entr. compr. qual.: 6.60085
+	entr. compr. header: 0.074498
+	store result: 5e-06
 Input stream sizes (before compression):
 	DNA size     : 167931864
 	Header size  : 792221
-DNA size        : 15629863
-Quality size    : 91034708
+DNA size        : 15629853
+Quality size    : 22439785
 Header size     : 81789
 Meta size       : 53
-Info size       : 202
+Info size       : 191
 reference reads memory usage: 5MiB
-Total time      : 21.4715s
+Total time      : 20.7317s
  * * * * * * * * READS STATS * * * * * * * * 
 # reads                        : 20676
 min read len                   : 2000
