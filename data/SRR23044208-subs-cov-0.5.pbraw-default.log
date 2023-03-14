@@ -5,7 +5,7 @@ input is not gzipped
 	number of threads: 8
 	k-mer length: 20
 	anchor length: 16
-	data source type: ONT
+	data source type: PBRaw
 	multipier for predicted cost of storing read part as edit script: 1
 	filter modulo: 12
 	header compression mode: org
@@ -36,7 +36,7 @@ approx. avg. read len: 9180
 Filtering k-mers.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
 Total count filtered: 3585
-Time: 0.00145085s
+Time: 0.00161623s
 reads queue approx. size: 73728KiB
 quals queue approx. size: 532480KiB
 headers queue approx. size: 73728KiB
@@ -57,28 +57,28 @@ Running compression.
 Kmers to reads memory usage: 0MiB
 100%
 Threads times summary:
-	reader: 0.033154
-	similarity finder: 0.000802
-	similarity finder internal (sorted): 0.005356 0.006027 0.006114 0.006238 0.006834 0.007222 0.007228 0.007606
-	mean similarity finder internal: 0.00657812
-	encoders (sorted): 9e-06 1.1e-05 1.4e-05 2e-05 2.5e-05 3.7e-05 0.241249
-	mean encoders: 0.0344807
-	encoders wait on queue (sorted): 0.0438748 0.0439184 0.0439639 0.0440281 0.0440283 0.044034 0.0440911
-	mean encoders wait on queue: 0.0439912
-	entr. compr.: 0.067539
-	entr. compr. qual.: 0.12084
-	entr. compr. header: 0.053084
-	store result: 2e-06
+	reader: 0.031203
+	similarity finder: 0.00084
+	similarity finder internal (sorted): 0.005517 0.005775 0.006501 0.007377 0.007479 0.007549 0.007679 0.007713
+	mean similarity finder internal: 0.00694875
+	encoders (sorted): 9e-06 1.5e-05 1.6e-05 2e-05 2e-05 4e-05 0.240645
+	mean encoders: 0.034395
+	encoders wait on queue (sorted): 0.0435934 0.0436931 0.043743 0.0437672 0.0437774 0.0438179 0.0438283
+	mean encoders wait on queue: 0.0437458
+	entr. compr.: 0.065723
+	entr. compr. qual.: 0.117413
+	entr. compr. header: 0.061113
+	store result: 4e-06
 Input stream sizes (before compression):
 	DNA size     : 2897412
 	Header size  : 12127
 DNA size        : 705996
-Quality size    : 1647392
+Quality size    : 1656498
 Header size     : 2094
 Meta size       : 52
-Info size       : 205
+Info size       : 207
 reference reads memory usage: 0MiB
-Total time      : 0.739718s
+Total time      : 0.701968s
  * * * * * * * * READS STATS * * * * * * * * 
 # reads                        : 316
 min read len                   : 2006

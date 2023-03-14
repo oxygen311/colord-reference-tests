@@ -5,7 +5,7 @@ input is not gzipped
 	number of threads: 8
 	k-mer length: 21
 	anchor length: 18
-	data source type: ONT
+	data source type: PBRaw
 	multipier for predicted cost of storing read part as edit script: 1
 	filter modulo: 12
 	header compression mode: org
@@ -36,7 +36,7 @@ approx. avg. read len: 8118
 Filtering k-mers.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
 Total count filtered: 57018280
-Time: 0.285616s
+Time: 0.336123s
 reads queue approx. size: 73728KiB
 quals queue approx. size: 532480KiB
 headers queue approx. size: 73728KiB
@@ -57,28 +57,28 @@ Running compression.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%Kmers to reads memory usage: 76MiB
 96%97%98%99%100%
 Threads times summary:
-	reader: 23.0592
-	similarity finder: 51.9558
-	similarity finder internal (sorted): 3.64655 3.76826 4.87129 6.9283 6.97969 9.53527 9.79002 11.42
-	mean similarity finder internal: 7.11743
-	encoders (sorted): 352.219 352.301 356.371 357.132 357.955 358.312 359.363
-	mean encoders: 356.236
-	encoders wait on queue (sorted): 0.135822 0.206786 0.233119 0.314412 0.422206 0.585068 0.693556
-	mean encoders wait on queue: 0.370139
-	entr. compr.: 54.7209
-	entr. compr. qual.: 184.394
-	entr. compr. header: 0.328941
-	store result: 3e-06
+	reader: 23.8099
+	similarity finder: 51.2273
+	similarity finder internal (sorted): 2.97304 4.16811 4.45031 6.58919 7.38263 8.94466 9.94092 11.7678
+	mean similarity finder internal: 7.02708
+	encoders (sorted): 347.96 349.017 351.234 351.382 351.772 353.177 353.653
+	mean encoders: 351.171
+	encoders wait on queue (sorted): 0.133069 0.229045 0.30053 0.306759 0.407482 0.613658 0.684505
+	mean encoders wait on queue: 0.38215
+	entr. compr.: 53.8513
+	entr. compr. qual.: 143.38
+	entr. compr. header: 0.328953
+	store result: 5e-06
 Input stream sizes (before compression):
 	DNA size     : 2000028061
 	Header size  : 18393016
-DNA size        : 143685621
-Quality size    : 1082010544
+DNA size        : 143685624
+Quality size    : 1120943030
 Header size     : 735413
 Meta size       : 53
-Info size       : 180
+Info size       : 182
 reference reads memory usage: 40MiB
-Total time      : 396.544s
+Total time      : 390.155s
  * * * * * * * * READS STATS * * * * * * * * 
 # reads                        : 246448
 min read len                   : 2000

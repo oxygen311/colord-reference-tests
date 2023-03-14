@@ -5,7 +5,7 @@ input is not gzipped
 	number of threads: 8
 	k-mer length: 20
 	anchor length: 16
-	data source type: ONT
+	data source type: PBRaw
 	multipier for predicted cost of storing read part as edit script: 1
 	filter modulo: 12
 	header compression mode: org
@@ -30,13 +30,13 @@ input is not gzipped
 	reference genome path: data/GCF_027944955.1_ASM2794495v1_genomic.fna
 	store reference genome in compressed file: false
 Reading reference genome...Done.
-Time: 0.0303626
+Time: 0.0306672
 Calculating checksum...Done.
-Time: 0.00175909
+Time: 0.00179131
 total sequences in reference genome file: 7
 md5: a6a445ad40a2dac11ccc94b770234bbc
-Store reference sequences as reads in file data/.CoLoRd-52945-vKNTuMv/refGen.fq...Done.
-Time: 0.0128843
+Store reference sequences as reads in file data/.CoLoRd-69300-2OvZXTQ/refGen.fq...Done.
+Time: 0.0138012
 Counting k-mers.
 Stage 1: 0%Stage 1: 53%Stage 1: 100%
 Stage 2: 0%Stage 2: 3%Stage 2: 6%Stage 2: 9%Stage 2: 12%Stage 2: 14%Stage 2: 17%Stage 2: 20%Stage 2: 22%Stage 2: 24%Stage 2: 27%Stage 2: 29%Stage 2: 31%Stage 2: 33%Stage 2: 35%Stage 2: 37%Stage 2: 39%Stage 2: 41%Stage 2: 43%Stage 2: 45%Stage 2: 47%Stage 2: 49%Stage 2: 50%Stage 2: 52%Stage 2: 53%Stage 2: 55%Stage 2: 57%Stage 2: 58%Stage 2: 60%Stage 2: 61%Stage 2: 62%Stage 2: 64%Stage 2: 65%Stage 2: 66%Stage 2: 67%Stage 2: 68%Stage 2: 70%Stage 2: 71%Stage 2: 72%Stage 2: 73%Stage 2: 74%Stage 2: 75%Stage 2: 76%Stage 2: 77%Stage 2: 78%Stage 2: 79%Stage 2: 80%Stage 2: 81%Stage 2: 82%Stage 2: 83%Stage 2: 84%Stage 2: 85%Stage 2: 86%Stage 2: 87%Stage 2: 88%Stage 2: 89%Stage 2: 90%Stage 2: 91%Stage 2: 92%Stage 2: 93%Stage 2: 94%Stage 2: 95%Stage 2: 96%Stage 2: 97%Stage 2: 98%Stage 2: 99%Stage 2: 100%
@@ -46,7 +46,7 @@ approx. avg. read len: 149
 Filtering k-mers.
 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
 Total count filtered: 144239
-Time: 0.00471312s
+Time: 0.00479092s
 # ref genome pseudo reads: 1871
 reads queue approx. size: 73728KiB
 quals queue approx. size: 532480KiB
@@ -66,34 +66,34 @@ adjusted memory related settings:
 sparse mode range in reads: 1990
 Running compression.
 Preparing pseudoreads...Done.
-Time: 0.0120397
+Time: 0.0088278
 overlap size: 190
 pseudoread len: 2980
 Kmers to reads memory usage: 0MiB
 80%100%
 Threads times summary:
-	reader: 0.073251
-	similarity finder: 0.042611
-	similarity finder internal (sorted): 0.014502 0.015875 0.016058 0.016601 0.017267 0.017991 0.018034 0.018287
-	mean similarity finder internal: 0.0168269
-	encoders (sorted): 1.2e-05 1.2e-05 1.5e-05 1.8e-05 2.3e-05 0.28372 1.07844
-	mean encoders: 0.194606
-	encoders wait on queue (sorted): 0.0966433 0.104126 0.104167 0.104193 0.104209 0.10422 0.104227
-	mean encoders wait on queue: 0.103112
-	entr. compr.: 0.091966
-	entr. compr. qual.: 0.109339
-	entr. compr. header: 0.074654
-	store result: 2e-06
+	reader: 0.07536
+	similarity finder: 0.038292
+	similarity finder internal (sorted): 0.015367 0.015941 0.016089 0.016583 0.017004 0.017518 0.020131 0.021107
+	mean similarity finder internal: 0.0174675
+	encoders (sorted): 8e-06 9e-06 1e-05 1.2e-05 1.7e-05 0.28136 1.10002
+	mean encoders: 0.197348
+	encoders wait on queue (sorted): 0.0987008 0.106778 0.106819 0.106835 0.106848 0.106883 0.106923
+	mean encoders wait on queue: 0.105684
+	entr. compr.: 0.089965
+	entr. compr. qual.: 0.109641
+	entr. compr. header: 0.078589
+	store result: 5e-06
 Input stream sizes (before compression):
 	DNA size     : 5194344
 	Header size  : 1355088
 DNA size        : 750682
-Quality size    : 173118
+Quality size    : 173038
 Header size     : 94072
 Meta size       : 81
-Info size       : 275
+Info size       : 277
 reference reads memory usage: 1MiB
-Total time      : 1.71344s
+Total time      : 1.75013s
  * * * * * * * * READS STATS * * * * * * * * 
 # reads                        : 34629
 min read len                   : 149
