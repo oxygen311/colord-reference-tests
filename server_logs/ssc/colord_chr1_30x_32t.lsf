@@ -1,0 +1,7 @@
+#!/bin/bash
+#BSUB -q score
+#BSUB -n 32
+#BSUB -J colord_chr1_30x_32t
+#BSUB -o colord_chr1_30x_32t.out
+#BSUB -e colord_chr1_30x_32t.err
+../tools/colord/bin/colord compress-pbraw data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq.pbraw.32t --verbose --threads 32

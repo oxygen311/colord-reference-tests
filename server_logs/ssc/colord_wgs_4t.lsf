@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+#BSUB -q score
+#BSUB -n 4
+#BSUB -J colord_wgs_4t
+#BSUB -o colord_wgs_4t.out
+#BSUB -e colord_wgs_4t.err
+../tools/colord/bin/colord compress-pbraw /public/home/users/bio001/users/yiheng/illumina/SRR13587129_1.fastq data/hg/wgs/SRR13587129_1.fq.pbraw.4t --verbose --threads 4

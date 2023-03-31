@@ -1,0 +1,76 @@
+Sender: LSF System <lsfadmin@b2172>
+Subject: Job 4368077: <colord_wgs_4t> in cluster <magiccube3> Done
+
+Job <colord_wgs_4t> was submitted from host <ln01> by user <bio001> in cluster <magiccube3> at Wed Mar 29 21:11:22 2023
+Job was executed on host(s) <4*b2172>, in queue <score>, as user <bio001> in cluster <magiccube3> at Wed Mar 29 21:11:24 2023
+</public/home/users/bio001> was used as the home directory.
+</public/home/users/bio001/users/alexeyzabelkin/colord-tests> was used as the working directory.
+Started at Wed Mar 29 21:11:24 2023
+Terminated at Thu Mar 30 01:38:13 2023
+Results reported at Thu Mar 30 01:38:13 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/usr/bin/bash
+#BSUB -q score
+#BSUB -n 4
+#BSUB -J colord_wgs_4t
+#BSUB -o colord_wgs_4t.out
+#BSUB -e colord_wgs_4t.err
+../tools/colord/bin/colord compress-pbraw /public/home/users/bio001/users/yiheng/illumina/SRR13587129_1.fastq data/hg/wgs/SRR13587129_1.fq.pbraw.4t --verbose --threads 4
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   79494.12 sec.
+    Max Memory :                                 15925 MB
+    Average Memory :                             13758.06 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   17592186044415 MB
+    Max Processes :                              4
+    Max Threads :                                19
+    Run time :                                   16009 sec.
+    Turnaround time :                            16011 sec.
+
+The output (if any) follows:
+
+Plus id size: 1
+Flags size: 9
+Numeric size size: 0
+Numeric small size: 0
+Numeric size: 0
+Hexadecimal size: 0
+Literal size: 138
+Literal same size: 5
+Literal same length size: 2
+Plain size: 27
+Quality quality_binary size  : 0
+Quality quality_quad size    : 0
+Quality quality_quinary size : 0
+Quality quality_original size: 0
+Quality quality_byte size    : 0
+Read type size: 179
+Rev. comp. size: 17
+Seen read id size: 3
+Symbols size: 432435
+Symbols with Ns size: 1126
+Read len no. bits size: 1
+Read len data size: 71
+Read id size: 2227
+Read id short size: 3
+Tuple type size: 287809
+Anchor len size: 7
+Skip len local size: 1
+Skip len distant size: 212
+
+
+PS:
+
+Read file <colord_wgs_4t.err> for stderr output of this job.
+

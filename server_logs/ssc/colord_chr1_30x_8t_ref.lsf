@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+#BSUB -q score
+#BSUB -n 8
+#BSUB -J colord_chr1_30x_8t_ref
+#BSUB -o colord_chr1_30x_8t_ref.out
+#BSUB -e colord_chr1_30x_8t_ref.err
+../tools/colord/bin/colord compress-pbraw data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq.pbraw.8t.ref --verbose --threads 8 --reference-genome data/hg/chr1/hg38.chr1.fna

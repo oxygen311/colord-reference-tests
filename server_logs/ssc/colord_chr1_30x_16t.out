@@ -1,0 +1,81 @@
+Sender: LSF System <lsfadmin@b2111>
+Subject: Job 4360399: <colord_chr1_30x_16t> in cluster <magiccube3> Done
+
+Job <colord_chr1_30x_16t> was submitted from host <ln01> by user <bio001> in cluster <magiccube3> at Tue Mar 28 19:14:55 2023
+Job was executed on host(s) <5*b2111>, in queue <score>, as user <bio001> in cluster <magiccube3> at Tue Mar 28 23:02:16 2023
+                            <2*b2167>
+                            <1*b2155>
+                            <1*b2173>
+                            <4*b2177>
+                            <3*b2144>
+</public/home/users/bio001> was used as the home directory.
+</public/home/users/bio001/users/alexeyzabelkin/colord-tests> was used as the working directory.
+Started at Tue Mar 28 23:02:16 2023
+Terminated at Tue Mar 28 23:12:37 2023
+Results reported at Tue Mar 28 23:12:37 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/usr/bin/bash
+#BSUB -q score
+#BSUB -n 16
+#BSUB -J colord_chr1_30x_16t
+#BSUB -o colord_chr1_30x_16t.out
+#BSUB -e colord_chr1_30x_16t.err
+../tools/colord/bin/colord compress-pbraw data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq data/hg/chr1/MGISEQ2000__HG004_sub30_q4.chr1.fq.pbraw.16t --verbose --threads 16
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4385.28 sec.
+    Max Memory :                                 11476 MB
+    Average Memory :                             2318.55 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   17592186044415 MB
+    Max Processes :                              4
+    Max Threads :                                43
+    Run time :                                   620 sec.
+    Turnaround time :                            14262 sec.
+
+The output (if any) follows:
+
+Plus id size: 1
+Flags size: 9
+Numeric size size: 0
+Numeric small size: 0
+Numeric size: 0
+Hexadecimal size: 0
+Literal size: 288
+Literal same size: 2
+Literal same length size: 2
+Plain size: 30
+Quality quality_binary size  : 0
+Quality quality_quad size    : 0
+Quality quality_quinary size : 0
+Quality quality_original size: 0
+Quality quality_byte size    : 0
+Read type size: 177
+Rev. comp. size: 17
+Seen read id size: 3
+Symbols size: 432413
+Symbols with Ns size: 1126
+Read len no. bits size: 1
+Read len data size: 71
+Read id size: 2042
+Read id short size: 3
+Tuple type size: 287475
+Anchor len size: 7
+Skip len local size: 1
+Skip len distant size: 212
+
+
+PS:
+
+Read file <colord_chr1_30x_16t.err> for stderr output of this job.
+
